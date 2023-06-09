@@ -1,0 +1,28 @@
+.containerDetail{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 500px;
+    border: solid 1px green;
+    padding: 20px 0;
+    margin-top: 40PX;
+}
+.containerDetail img{
+    border-radius: 20px;
+}
+.containerDetail h2{
+    line-height: 80%;
+}
+.containerDetail p{
+    text-justify: auto;
+}
+@media screen and (max-width: 510px) {
+    .containerDetail{
+        width: 300px;
+    }
+    .containerDetail img{
+        width: 200px;
+    }
+    .containerDetail h2{
+        line-height: 120%;
+    }
+}

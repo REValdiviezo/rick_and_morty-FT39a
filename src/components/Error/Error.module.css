@@ -1,0 +1,17 @@
+.containerError{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://es.rollingstone.com/wp-content/uploads/2022/09/La-serie-Rick-y-Morty-podria-ser-eterna.jpg);
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error{
+    font-size: 170px;
+    font-family:cursive;
+    color: rgb(9, 255, 0);
+    -webkit-text-stroke: 9px rgb(0, 0, 0);
+}

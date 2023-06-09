@@ -1,0 +1,56 @@
+.containerForm{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./fondoApp.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: rgb(21, 255, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.containerForm form{
+    background-color: rgba(61, 61, 61, 0.829);
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.containerForm form img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px 5px rgba(7, 197, 7, 0.678);
+}
+.containerForm form .inputs{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerForm form .inputs input{
+    font-size: 18px;
+    width: 250px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: rgba(128, 128, 128, 0.377);
+    outline: none;
+}
+.containerForm form .inputs input:focus{
+    background-color: rgba(172, 172, 172, 0.377);
+}
+.containerForm form .boton{
+    margin-top: 15px;
+}
+
+
+

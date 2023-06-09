@@ -1,0 +1,8 @@
+.containerCards{
+    max-width: 1250px;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+}

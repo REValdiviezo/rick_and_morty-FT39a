@@ -1,0 +1,43 @@
+.containerSB{
+    width: 310PX;
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+button{
+    padding: 7px;
+    margin-left: 10px;
+    background-color: black;
+    color: rgb(4, 221, 4);
+    border-radius: 10px;
+    border: solid .5px green;
+    font-weight: bold;
+}
+button:hover{
+    color: rgb(0, 167, 0);
+}
+input{
+    font-size: 18px;
+    width: 250px;
+    color: rgb(0, 228, 0);
+    border: none;
+    border-radius: 10px;
+    padding-left: 9px;
+    background-color: rgba(128, 128, 128, 0.377);
+    outline: none;
+}
+input:focus{
+    background-color: rgba(172, 172, 172, 0.377);
+
+}
+
+@media screen and (max-width: 665px) {
+    .containerSB{
+        width: 230px;
+    }
+    input{
+        width: 150px;
+    }
+}
