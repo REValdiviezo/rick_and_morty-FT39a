@@ -42,14 +42,20 @@
     border: none;
     border-radius: 10px;
     padding-left: 10px;
-    background-color: rgba(128, 128, 128, 0.377);
+    background-color: rgba(124, 124, 124, 0.377);
     outline: none;
 }
 .containerForm form .inputs input:focus{
-    background-color: rgba(172, 172, 172, 0.377);
+    background-color: rgba(221, 221, 221, 0.575);
 }
-.containerForm form .boton{
-    margin-top: 15px;
+.containerForm form .btnLogin{
+    padding: 7px;
+    margin-top: 10px;
+    background-color: black;
+    color: rgb(4, 221, 4);
+    border-radius: 10px;
+    border: solid .5px green;
+    font-weight: bold;
 }
 
 

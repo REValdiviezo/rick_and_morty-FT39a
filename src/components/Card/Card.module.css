@@ -1,7 +1,7 @@
 .containerCard{
     background-color: rgba(24, 24, 24, 0.39);
     width: 200px;
-    height: 330px;
+    height: 300px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -10,11 +10,24 @@
     border-radius: 20px;
     border: solid 1px rgba(0, 128, 0, 0.329);
     margin: 20px;
+
 }
 .containerCard:hover{
     transform: scale(1.06);
     background-color: rgba(75, 67, 67, 0.514);
     transition: transform .5s;
+}
+.containerCard .like{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: -3px;
+    background-color: aqua;
+    border: none;
+    border-radius: 50%;
 }
 .containerCard .top img{
     width: 105px;
@@ -28,11 +41,13 @@
     -webkit-text-stroke: 0.5px rgb(0, 217, 255);
     text-shadow: 4px 4px 7px rgb(19, 218, 245);
 }
-.containerCard .bottom{
+.containerCard .botonesCard{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
-.containerCard .bottom button{
+.containerCard .botonesCard .btnCard{
+
     background-color: black;
     color: rgb(4, 221, 4);
     border-radius: 10px;
@@ -40,6 +55,6 @@
     padding: 2px 6px;
     font-weight: bold;
 }
-.containerCard .bottom button:hover{
-    color: rgb(0, 126, 0);
+.containerCard .botonesCard .btnCard:hover{
+    background-color: rgb(102, 102, 102);
 }

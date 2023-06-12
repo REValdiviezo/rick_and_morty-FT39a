@@ -1,20 +1,23 @@
-import './App.css';
+import './App.module.css';
+import style from './App.module.css'
 import Nav from './components/Nav/Nav';
 import Cards from './components/Cards/Cards.jsx';
 import About from './components/About/About';
 import Detail from './components/Detail/Detail';
 import Error from './components/Error/Error';
 import Form from './components/Form/Form';
-import { useState,} from 'react';
+import Favorites from './components/Favorites/Favorites'
+import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 const email = 'eze_valdiviezo@yahoo.com';
 const password = '38408507';
 
-function App() {
+const App = () => {
    const [characters, setCharacters] = useState([])
    const [access, setAccess] = useState(false)
    const navigate = useNavigate()
+   const location = useLocation()
 
    const onSearch = (id) => {
       if (id > 826) {
@@ -70,26 +73,43 @@ function App() {
       navigate('/')
    }
 
+   useEffect(() => {
+      !access && navigate('/');
+   }, [access]);
+
+
    return (
-      <div className='App'>
-         {!access ? (
-            <>
-               <Routes>
-                  <Route path='/' element={<Form login={login} />}></Route>
-                  <Route path='*' element={<Error />}></Route>
-               </Routes>
-            </>
-         ) : (
-            <>
-               <Nav onSearch={onSearch} randomChar={randomChar} logOut={logOut} />
-               <Routes>
-                  <Route path='/home' element={<Cards characters={characters} onClose={onClose} />}></Route>
-                  <Route path='/about' element={<About />}></Route>
-                  <Route path='/detail/:id' element={<Detail />}></Route>
-               </Routes>
-            </>
-         )}
+      <div className={style.App}>
+         {/* {location.pathname =='*' && <Error/>} */}
+         {location.pathname !== '/' && <Nav onSearch={onSearch} randomChar={randomChar} logOut={logOut}/>}
+         <Routes>
+            <Route path='/' element={<Form login={login} />} />
+            <Route path='/home' element={<Cards characters={characters} onClose={onClose} />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/detail/:id' element={<Detail />} />
+            <Route path='/favorites' element={<Favorites />} />
+         </Routes>
       </div>
+      // <div className='App'>
+      //    {!access ? (
+      //       <>
+      //          <Routes>
+      //             <Route path='/' element={<Form login={login} />}></Route>
+      //             {/* <Route path='*' element={<Error />}></Route> */}
+      //          </Routes>
+      //       </>
+      //    ) : (
+      //       <>
+      //          <Nav onSearch={onSearch} randomChar={randomChar} logOut={logOut} />
+      //          <Routes>
+      //             <Route path='/home' element={<Cards characters={characters} onClose={onClose} />}></Route>
+      //             <Route path='/about' element={<About />}></Route>
+      //             <Route path='/detail/:id' element={<Detail />}></Route>
+      //             <Route path='/favorites' element={<Favorites />}></Route>
+      //          </Routes>
+      //       </>
+      //    )}
+      // </div>
    );
 }
 

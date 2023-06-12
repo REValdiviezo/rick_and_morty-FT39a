@@ -1,6 +1,8 @@
+import style from './About.module.css'
+
 const About = () => {
     return(
-        <div>
+        <div className={style.containerAbout}>
             <h1>Hola soy el About🚀✨</h1>
         </div>
     )

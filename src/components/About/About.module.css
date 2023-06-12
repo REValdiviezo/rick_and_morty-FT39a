@@ -1,9 +1,7 @@
-.containerCards{
-    max-width: 1250px;
+.containerAbout{
+    width: 100%;
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
-    margin-left: 50px;
     justify-content: center;
 }

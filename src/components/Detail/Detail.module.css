@@ -1,3 +1,7 @@
+.detail{
+    display: flex;
+    justify-content: center;
+}
 .containerDetail{
     color: rgb(255, 255, 255);
     text-align: center;
@@ -5,6 +9,7 @@
     border: solid 1px green;
     padding: 20px 0;
     margin-top: 40PX;
+
 }
 .containerDetail img{
     border-radius: 20px;
@@ -15,7 +20,15 @@
 .containerDetail p{
     text-justify: auto;
 }
-@media screen and (max-width: 510px) {
+.containerDetail .btnDetail{
+    background-color: black;
+    color: rgb(4, 221, 4);
+    border-radius: 10px;
+    border: solid .5px green;
+    padding: 2px 6px;
+    font-weight: bold;
+}
+@media screen and (max-width: 725px) {
     .containerDetail{
         width: 300px;
     }

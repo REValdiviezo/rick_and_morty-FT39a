@@ -6,7 +6,7 @@
     align-items: center;
 
 }
-button{
+.btnAgregar{
     padding: 7px;
     margin-left: 10px;
     background-color: black;
@@ -15,7 +15,7 @@ button{
     border: solid .5px green;
     font-weight: bold;
 }
-button:hover{
+.btnAgregar:hover{
     color: rgb(0, 167, 0);
 }
 input{
@@ -33,7 +33,7 @@ input:focus{
 
 }
 
-@media screen and (max-width: 665px) {
+@media screen and (max-width: 725px) {
     .containerSB{
         width: 230px;
     }

@@ -1,0 +1,35 @@
+.containerFav{
+    max-width: 1250px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 50px;
+    justify-content: start;
+
+
+}
+.containerFav .selectores{
+    display: flex;
+    justify-content: center;
+
+}
+.containerFav .selectores select{
+    background-color: rgba(0, 0, 0, 0.575);
+    border: solid 2px rgb(19, 218, 245);
+    font-size: 16px;
+    color: rgb(0, 226, 0);
+    margin: 5px;
+}
+.containerFav .selectores select option{
+    background-color: black;
+    border: none;
+    color: green;
+}
+
+.containerFav .fav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}

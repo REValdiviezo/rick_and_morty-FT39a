@@ -4,12 +4,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 .leftSB{
-    padding-left: 30px;
+    padding-left: 10px;
 }
-.leftSB button{
+.leftSB .btnNav{
     padding: 7px;
     margin-left: 10px;
     background-color: black;
@@ -18,13 +17,13 @@
     border: solid .5px green;
     font-weight: bold;
 }
-.leftSB button:hover{
+.leftSB .btnNav:hover{
    color: rgb(0, 167, 0);
 }
 .rigthSB{
     padding-right: 20px;
 }
-@media screen and (max-width: 665px) {
+@media screen and (max-width: 725px) {
     .containerNav{
         height: 95px;
         flex-direction: column-reverse;
