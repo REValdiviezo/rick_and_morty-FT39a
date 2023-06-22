@@ -14,7 +14,7 @@ const Card = ({ id, name, status, species, gender, origin, image, onClose, add_f
          remove_fav(id)
       } else {
          setIsFav(true)
-         add_fav({id, name, status, species, gender, origin, image})
+         add_fav({ id, name, status, species, gender, origin, image })
       }
    }
    useEffect(() => {
@@ -27,7 +27,7 @@ const Card = ({ id, name, status, species, gender, origin, image, onClose, add_f
    return (
       <div className={style.containerCard}>
          <div className={style.divLike}>
-            <button className={style.like} onClick={handleFavorite}>{ isFav ? '❤️' : '🤍' }</button>
+            <button className={style.like} onClick={handleFavorite}>{isFav ? '❤️' : '🤍'}</button>
          </div>
          <div className={style.top}>
             <img src={image} alt='Personaje' />
@@ -35,7 +35,7 @@ const Card = ({ id, name, status, species, gender, origin, image, onClose, add_f
 
             <h2>Species: {species}</h2>
             <h2>Gender: {gender}</h2>
-            
+
          </div>
 
          <div className={style.botonesCard}>
@@ -43,7 +43,7 @@ const Card = ({ id, name, status, species, gender, origin, image, onClose, add_f
                <button className={style.btnCard} >Detail</button>
             </Link>
             {location.pathname !== '/favorites' && <button className={style.btnCard} onClick={() => onClose(id)}>Close</button>}
-            
+
          </div>
       </div>
    );
