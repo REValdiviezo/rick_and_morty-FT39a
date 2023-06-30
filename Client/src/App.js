@@ -72,8 +72,7 @@ const App = () => {
       navigate('/')
    };
 
-   console.log("prueba para el gitHub");
-
+   
    return (
       <div className={style.App}>
          {location.pathname !== '/' && <Nav onSearch={onSearch} randomChar={randomChar} logOut={logOut} />}
