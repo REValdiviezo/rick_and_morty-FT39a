@@ -72,6 +72,7 @@ const App = () => {
       navigate('/')
    };
 
+   console.log("prueba para el gitHub");
 
    return (
       <div className={style.App}>
