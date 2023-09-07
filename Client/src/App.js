@@ -10,7 +10,7 @@ import Favorites from './components/Favorites/Favorites'
 import { useState } from 'react';
 import axios from 'axios';
 import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
-const URL = 'http://localhost:3001/rickandmorty/login/';
+const URL = 'http://localhost:3001/rickandmorty/login';
 // const email = 'eze_valdiviezo@yahoo.com';
 // const password = '38408507';
 
@@ -24,7 +24,7 @@ const App = () => {
       try {
          const { email, password } = userData;
          const { data } = await axios(URL + `?email=${email}&password=${password}`)
-         const { access } = data;
+         const access = data;
          setAccess(access);
          access && navigate('/home');
       } catch (error) {
@@ -51,7 +51,7 @@ const App = () => {
 
    const randomChar = () => {
       const randomNumber = Math.floor(Math.random() * 826 + 1);
-      const url = `https://rickandmortyapi.com/api/character/${randomNumber}`;
+      const url = `http://localhost:3001/rickandmorty/character/${randomNumber}`;
       fetch(url)
          .then((res) => res.json())
          .then((data) => {

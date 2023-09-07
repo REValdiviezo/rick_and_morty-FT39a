@@ -4,8 +4,8 @@ const {User} = require('../DB_connection');
     try {
         const {email, password} = req.body;
         if(!email || !password) return res.status(400).send('Faltan datos')
-        const user = await User.findOrCreate({where: {email, password}})
-        return res.status(200).json(user);
+        const user = await User.findOrCreate({where: {email,password}})
+        return res.status(200).json(user)
     } catch (error) {
         res.status(500).send(error.message)
     }
