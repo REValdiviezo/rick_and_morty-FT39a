@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 .containerForm{
     width: 100vw;
     height: 100vh;
@@ -58,5 +59,24 @@
     font-weight: bold;
 }
 
+.btnEntrar {
+    font-family: 'Creepster', cursive;
+    background-color: #00c8c8; /* Inspirado en los portales */
+    color: #fff;
+    border: 2px solid #00ff00; /* Verde "toxico" como en los portales */
+    padding: 10px 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
 
-
+.btnEntrar:hover {
+    transform: scale(1.1);
+    background-color: #00ff00;
+    color: #000;
+}
+.imgEntrada {
+    width: 500px;
+    height: 300px;
+}

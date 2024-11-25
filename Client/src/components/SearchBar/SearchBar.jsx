@@ -10,8 +10,8 @@ const SearchBar = ({ onSearch }) => {
 
    return (
       <div className={style.containerSB}>
-         <input type='search' onChange={handleChange} value={id}/>
-         <button className={style.btnAgregar} onClick={() => {onSearch(id); setId('')}}>Agregar</button>
+         <input type='search' onChange={handleChange} value={id} placeholder='N° 1 - 826'/>
+         <button className={style.btnAgregar} onClick={() => {onSearch(id); setId('')}}>Add</button>
       </div>
    );
 }

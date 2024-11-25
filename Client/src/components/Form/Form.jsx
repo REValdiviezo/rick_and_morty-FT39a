@@ -2,6 +2,7 @@ import { useState } from "react";
 import validation from './validation'
 import style from './Form.module.css'
 import logo from './LOGO.png'
+import { NavLink } from "react-router-dom";
 
 const Form = ({ login }) => {
     const [userData, setUserData] = useState({
@@ -29,8 +30,11 @@ const Form = ({ login }) => {
 
     return (
         <div className={style.containerForm}>
-            <img src={logo} alt="img" />
-            <form onSubmit={handleSubmit}>
+            <img className={style.imgEntrada} src={logo} alt="img" />
+            <NavLink to={'/home'}>
+                <button className={style.btnEntrar}>Entrar</button>
+            </NavLink>
+            {/* <form onSubmit={handleSubmit}>
                 <img src="https://i.pinimg.com/200x150/13/7b/54/137b540a18c16c296b995a908ef6bb1c.jpg" alt="" />
                 <div className={style.inputs}>
                     <label htmlFor="email">Email: </label>
@@ -44,7 +48,7 @@ const Form = ({ login }) => {
                 <div className={style.boton}>
                     <button className={style.btnLogin}>Submit</button>
                 </div>
-            </form>
+            </form> */}
         </div>
     )
 }

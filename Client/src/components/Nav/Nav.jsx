@@ -13,10 +13,10 @@ const Nav = ({ onSearch, randomChar, logOut, }) => {
                     <button className={style.btnNav}>Home</button>
                 </NavLink>
                 <NavLink to='/about'>
-                    <button className={style.btnNav}>About</button>
+                    <button className={style.btnNav}>About Me</button>
                 </NavLink>
                     {location.pathname === '/home' && <button className={style.btnNav} onClick={randomChar}>Random</button>}
-                    <button className={style.btnNav} onClick={logOut}>Log out</button>
+                    <button className={style.btnNav} onClick={logOut}>Exit</button>
                 <NavLink to='/favorites'>
                     <button className={style.btnNav}>Favorite</button>
                 </NavLink>
